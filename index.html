@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - [Tu Nombre]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav>
+        <div class="container">
+            <h1>Portafolio</h1>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Hola, soy [Tu Nombre]</h1>
+            <p>Desarrollador especializado en RPG y soluciones empresariales</p>
+            <a href="#contact" class="btn">Contáctame</a>
+        </div>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Soy un programador con [X años] de experiencia en sistemas AS/400, especializado en soluciones
+                empresariales y automatización de procesos.</p>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects">
+        <div class="container">
+            <h2>Proyectos destacados</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Optimización de Inventarios</h3>
+                    <p>Automatización de reportes de inventario, reduciendo el tiempo de generación en un 50%.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Sistema de Pedidos</h3>
+                    <p>Creación de un módulo en RPG para gestionar pedidos con reportes personalizados.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Dashboard de Producción</h3>
+                    <p>Desarrollo de un dashboard para visualizar métricas de producción en tiempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 [Tu Nombre] | Sígueme en:
+                <a href="https://github.com" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("kQoStBUW6YtVcDA8c"); // Reemplaza con tu User ID de EmailJS
+    </script>
+</body>
+
+</html>
